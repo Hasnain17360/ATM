@@ -39,7 +39,7 @@ if (pinAnswer.pin === myPin) {
         }
         else {
             console.log(`\n$${amountAns.amount} Withdrawn Successfully!`);
-            console.log(`Remaining Balance: ${myBalance}`);
+            console.log(`Remaining Balance: $${myBalance}`);
         }
     }
     // Quick Cash Feature:

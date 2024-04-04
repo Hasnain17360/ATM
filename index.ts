@@ -45,7 +45,7 @@ if (pinAnswer.pin === myPin) {
       console.log("Insufficient Balance");
     } else {
       console.log(`\n$${amountAns.amount} Withdrawn Successfully!`);
-      console.log(`Remaining Balance: ${myBalance}`);
+      console.log(`Remaining Balance: $${myBalance}`);
     }
   }
 
