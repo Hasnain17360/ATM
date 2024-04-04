@@ -30,7 +30,7 @@ if (pinAnswer.pin === myPin) {
   // Withdrawn Feature:
 
   if (operationAns.operation === "Withdraw") {
-    let amountAns = await inquirer.prompt([
+    let amountAns = await inquirer.prompt([  
       {
         name: "amount",
         message: "\nEnter your amount: ",
@@ -56,76 +56,71 @@ if (pinAnswer.pin === myPin) {
         name: "quick",
         message: "\nPlease select an option:",
         type: "list",
-        choices: ["$1000", "$5000", "$10000", "$20000", "$50000"],
+        choices: ["1000", "5000", "10000", "20000", "50000"],
       },
     ]);
 
     // Deduct 1000
 
-    if (quickCash.quick === "$1000") {
-      myBalance -= 1000;
+    if (quickCash.quick === "1000") {
 
       if (quickCash.quick > myBalance) {
         console.log("Insufficient Balance");
-        // console.log(`Available Balance: ${myBalance}`)
       } else {
-        console.log(`\n${quickCash.quick} Withdrawn Successfully!`);
+        myBalance -= quickCash.quick;
+        console.log(`\n$${quickCash.quick} Withdrawn Successfully!`);
         console.log(`Remaining Balance: $${myBalance}`);
       }
     }
 
     // Deduct 5000
 
-    if (quickCash.quick === "$5000") {
-      myBalance -= 5000;
+    if (quickCash.quick === "5000") {
 
       if (quickCash.quick > myBalance) {
         console.log("Insufficient Balance");
-        // console.log(`Available Balance: ${myBalance}`)
       } else {
-        console.log(`\n${quickCash.quick} Withdrawn Successfully!`);
+        myBalance -= quickCash.quick;
+        console.log(`\n$${quickCash.quick} Withdrawn Successfully!`);
         console.log(`Remaining Balance: $${myBalance}`);
       }
     }
 
     // Deduct 10000
 
-    if (quickCash.quick === "$10000") {
-      myBalance -= 10000;
+    if (quickCash.quick === "10000") {
 
       if (quickCash.quick > myBalance) {
         console.log("Insufficient Balance");
-        // console.log(`Available Balance: ${myBalance}`)
       } else {
-        console.log(`\n${quickCash.quick} Withdrawn Successfully!`);
+        myBalance -= quickCash.quick;
+        console.log(`\n$${quickCash.quick} Withdrawn Successfully!`);
         console.log(`Remaining Balance: $${myBalance}`);
       }
     }
 
     // Deduct 20000
 
-    if (quickCash.quick === "$20000") {
-      myBalance -= 20000;
+    if (quickCash.quick === "20000") {
 
       if (quickCash.quick > myBalance) {
         console.log("Insufficient Balance");
-        // console.log(`Available Balance: ${myBalance}`)
       } else {
-        console.log(`\n${quickCash.quick} Withdrawn Successfully!`);
+        myBalance -= quickCash.quick;
+        console.log(`\n$${quickCash.quick} Withdrawn Successfully!`);
         console.log(`Remaining Balance: $${myBalance}`);
       }
     }
 
     // Deduct 50000
 
-    if (quickCash.quick === "$50000") {
-      myBalance -= 50000;
+    if (quickCash.quick === "50000") {
 
       if (quickCash.quick > myBalance) {
         console.log("Insufficient Balance");
-        // console.log(`Available Balance: ${myBalance}`)
       } else {
-        console.log(`\n${quickCash.quick} Withdrawn Successfully!`);
+        myBalance -= quickCash.quick;
+        console.log(`\n$${quickCash.quick} Withdrawn Successfully!`);
         console.log(`Remaining Balance: $${myBalance}`);
       }
     }
@@ -169,7 +164,33 @@ if (pinAnswer.pin === myPin) {
     inquirer.prompt(operationAns.operation);
 
     // Loop function still needs to be added, along with the amount function which calculates all transactions until an exit is done
-
+  } else if (
+    continueUsing.continue === "q" ||
+    "w" ||
+    "e" ||
+    "r" ||
+    "t" ||
+    "u" ||
+    "i" ||
+    "o" ||
+    "p" ||
+    "a" ||
+    "s" ||
+    "d" ||
+    "f" ||
+    "g" ||
+    "h" ||
+    "j" ||
+    "k" ||
+    "l" ||
+    "z" ||
+    "x" ||
+    "c" ||
+    "v" ||
+    "b" ||
+    "m"
+  ) {
+    console.log("Please use an appropriate key");
   } else {
     console.log("\n\nThank You for using Sasta Pay!");
   }
