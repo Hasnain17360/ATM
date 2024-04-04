@@ -1,6 +1,6 @@
 {
   "name": "@hasnain17/sasta-pay",
-  "version": "3.1.3",
+  "version": "3.2.3",
   "description": "An ATM system is made using TS",
   "main": "index.js",
   "type": "module",
