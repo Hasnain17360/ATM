@@ -165,34 +165,11 @@ if (pinAnswer.pin === myPin) {
 
     // Loop function still needs to be added, along with the amount function which calculates all transactions until an exit is done
   } else if (
-    continueUsing.continue === "q" ||
-    "w" ||
-    "e" ||
-    "r" ||
-    "t" ||
-    "u" ||
-    "i" ||
-    "o" ||
-    "p" ||
-    "a" ||
-    "s" ||
-    "d" ||
-    "f" ||
-    "g" ||
-    "h" ||
-    "j" ||
-    "k" ||
-    "l" ||
-    "z" ||
-    "x" ||
-    "c" ||
-    "v" ||
-    "b" ||
-    "m"
-  ) {
-    console.log("Please use an appropriate key");
-  } else {
+    continueUsing.continue === "n")
+  {
     console.log("\n\nThank You for using Sasta Pay!");
+  } else {
+    console.log("Please use an appropriate key");
   }
 
   // end of this feature
